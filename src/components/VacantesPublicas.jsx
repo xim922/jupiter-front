@@ -99,7 +99,7 @@ const VacantesPublicas = () => {
 
   const getVacantes = async () => {
     try {
-      const { data } = await axios.get(`job/all/1/5`);
+      const { data } = await axios.get(`job/all/1/30`);
       setVacantes(data);
     } catch (err) {
       Swal.fire({
